@@ -1,0 +1,84 @@
+/*    tablet
+@media (max-width:991px) {
+    body {
+        background-color: black;
+    }
+}
+    */
+
+/*       mobile
+@media (max-width:480px) {
+    body {
+        background-color: blue;
+    }
+}
+*/
+
+
+/*mobile first*/
+/* MOBILE (desde 300px) */
+@media(min-width:300px) {
+    section {
+        display: grid;
+        gap: 20px;
+        /*forma con areas*/
+        grid-template-rows: auto;
+        grid-template-areas:
+            "imagen-1 imagen-1"
+            "imagen-2 imagen-3"
+            "imagen-4 imagen-4"
+            "imagen-5 imagen-6"
+        ;
+    }
+
+    section div img {
+        width: 100%;
+    }
+
+
+    .caja-1 {
+        grid-area: imagen-1;
+    }
+
+    .caja-2 {
+        grid-area: imagen-2;
+    }
+
+    .caja-3 {
+        grid-area: imagen-3;
+    }
+
+    .caja-4 {
+        grid-area: imagen-4;
+    }
+
+    .caja-5 {
+        grid-area: imagen-5;
+    }
+
+    .caja-6 {
+        grid-area: imagen-6;
+    }
+}
+
+/* TABLET (desde 768px en adelante) */
+@media (min-width: 768px) {
+    section {
+        grid-template-rows: auto;
+        grid-template-areas:
+            "imagen-1 imagen-1"
+            "imagen-2 imagen-3"
+            "imagen-4 imagen-4"
+            "imagen-5 imagen-6";
+    }
+}
+
+/* ESCRITORIO (desde 1180px en adelante) */
+@media (min-width: 1180px) {
+    section {
+        grid-template-rows: auto;
+        grid-template-areas:
+            "imagen-1 imagen-2 imagen-3"
+            "imagen-4 imagen-5 imagen-6";
+    }
+}

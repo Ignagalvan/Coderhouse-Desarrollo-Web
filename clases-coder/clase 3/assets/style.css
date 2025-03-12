@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.buttom{
+    background-color: #1977cc;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 50px;
+}
+
+.top-header{
+    background-color:  #1977cc;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.top-header .contacto{
+    display: flex;
+    column-gap: 20px;
+}
+
+.top-header div a,
+.top-header div p{
+    color: white;
+}
+
+.buttom-header{
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttom-header nav{
+    display: flex;
+    align-items: center;
+}
+.buttom-header nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 25px; /*margin: 0 25px;*/
+}
+.buttom-header nav ul li a{
+    color: rgb(30, 30, 30);
+}

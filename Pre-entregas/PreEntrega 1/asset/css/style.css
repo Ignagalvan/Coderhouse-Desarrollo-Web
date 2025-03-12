@@ -1,0 +1,44 @@
+/* montserrat estilo de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos header */
+header {
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    border-bottom: 2px solid black; 
+}
+
+/* estilos main-index */
+.main-index {
+    background-color: aliceblue;
+}
+
+.menu-tarjetas{
+    border: 1px solid black;
+}
+
+/* estilos footer */
+footer {
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+footer section{
+    padding: 10px;
+}
