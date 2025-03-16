@@ -91,6 +91,15 @@ a {
     width: 100%;
 }
 
+.grid{
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 30px;
+    width: 100%;
+}
+
 .productos {
     background-color: #ffffff;
     margin: 15px;
