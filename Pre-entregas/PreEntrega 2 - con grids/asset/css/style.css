@@ -44,6 +44,16 @@ a {
     gap: 20px;
 }
 
+.navbar-toggler-icon {
+    filter: invert(1);
+    /* Invierte los colores, útil para cambiar negro a blanco */
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+    /* Hace que el borde sea blanco */
+}
+
 .navbar {
     background-color: #0f816b;
     display: flex;
@@ -55,10 +65,19 @@ a {
 .navbar ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    /* Centra los elementos */
     align-items: center;
-    gap: 100px;
-    flex-wrap: wrap;
     padding: 0;
+    margin: 0 auto;
+    /* Asegura que se mantenga centrado */
+    gap: 30px;
+    /* Ajusta la separación entre los elementos */
+}
+
+.navbar-nav .nav-link {
+    font-weight: normal !important;
+    color: white;
 }
 
 /* estilos main */
@@ -112,7 +131,7 @@ a {
     margin-top: 5px;
 }
 
-.btn{
+.btn {
     background-color: #231f21;
     color: white;
     padding: 5px 10px;
@@ -120,28 +139,9 @@ a {
 }
 
 /* estilos main contacto */
-.formulario-contacto{
+.formulario-contacto {
     background-color: #0f816b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
-    margin-left: 25%;
-    margin-top: 40px;
-}
-
-.formulario-contacto div {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding: 15px;
-    gap: 5px;
-}
-.formulario-contacto div h2 {
-    color: white;
-    font-size: 30px;
-    text-align: center;
+    margin: 40px;
 }
 
 /* estilos main sobre nosotros */
@@ -152,13 +152,14 @@ a {
     margin-top: 40px;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
 }
 
 /* Título de la sección "Sobre Nosotros" */
 .titulo-sobre-nosotros {
     font-size: 2rem;
-    color: white; 
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -166,7 +167,7 @@ a {
 /* Sección de párrafos */
 .informacion .texto {
     font-size: 1.1rem;
-    color: white; 
+    color: white;
     text-align: justify;
     margin-bottom: 15px;
 }
